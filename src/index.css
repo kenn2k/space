@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-drop-shadow {
+    filter: drop-shadow(1px 1px 5px #7b97dd);
+  }
+  .mobile {
+    @media (max-width: 1040px) {
+      height: calc(100vh - 72px);
+    }
+    @media (max-width: 765px) {
+      height: 100%;
+    }
+  }
+}
