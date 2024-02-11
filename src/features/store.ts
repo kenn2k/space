@@ -1,11 +1,10 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import testReducer from "./slices/asyncSlice";
-const rootReducer = combineReducers({
-  test: testReducer,
-});
+import { configureStore } from "@reduxjs/toolkit";
+import apodSlice from "./slices/apodSlice";
 
 const store = configureStore({
-  reducer: rootReducer,
+  reducer: {
+    new: apodSlice.reducer,
+  },
 });
 
 export default store;

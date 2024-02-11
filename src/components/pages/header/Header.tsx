@@ -5,6 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Container from "../../UI/Container";
+import { FaRocket } from "react-icons/fa6";
 const Header = () => {
   const [isSideMenuOpen, setMenu] = useState(false);
 
@@ -32,14 +33,13 @@ const Header = () => {
         <div className="flex items-center justify-between gap-8">
           <div className="flex">
             <section className="flex items-center gap-4">
-              {/* menu */}
               <FiMenu
                 onClick={() => setMenu(true)}
                 className="text-3xl cursor-pointer lg:hidden"
               />
-              {/* logo */}
+
               <Link to={"/"} className="hidden font-mono text-4xl md:block">
-                space
+                <FaRocket />
               </Link>
             </section>
           </div>
@@ -47,7 +47,7 @@ const Header = () => {
             {navlinks.map((d, i) => (
               <Link
                 key={i}
-                className="hidden p-2 font-bold transition border border-solid lg:block rounded-xl hover:ease-in hover:bg-hoverBg hover:text-hoverText :duration-500"
+                className="hidden p-2 font-bold transition border border-solid lg:block rounded-xl hover:ease-in hover:bg-hoverBg hover:text-hoverText "
                 to={d.link}
               >
                 {d.labe}

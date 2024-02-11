@@ -4,7 +4,10 @@
 
 @layer utilities {
   .custom-drop-shadow {
-    filter: drop-shadow(1px 1px 5px #7b97dd);
+    filter: drop-shadow(1px 1px 3px #7b97dd);
+  }
+  .customBlur {
+    backdrop-filter: blur(3px);
   }
   .mobile {
     @media (max-width: 1040px) {
@@ -13,5 +16,9 @@
     @media (max-width: 765px) {
       height: 100%;
     }
+  }
+
+  .back {
+    background-image: url(./assets/bgReg.jpg);
   }
 }
