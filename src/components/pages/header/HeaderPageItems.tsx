@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import Container from "../../UI/Container";
 import { useAppDispatch, useAppSelector } from "../../../features/redux-hooks";
@@ -13,7 +13,7 @@ const HeaderPageItems = () => {
   }, []);
 
   return (
-    <div className="  flex flex-col justify-center  md:items-center p-[5%] h-[calc(100vh_-_72px)] mobile">
+    <div className="  flex flex-col justify-center  md:items-center p-[5%] h-full mobile">
       {news && (
         <Container>
           <div className="flex flex-col gap-[3rem] ">
