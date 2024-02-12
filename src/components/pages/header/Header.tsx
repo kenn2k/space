@@ -5,7 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Container from "../../UI/Container";
-import { FaRocket } from "react-icons/fa6";
+
 const Header = () => {
   const [isSideMenuOpen, setMenu] = useState(false);
 
@@ -38,8 +38,8 @@ const Header = () => {
                 className="text-3xl cursor-pointer lg:hidden"
               />
 
-              <Link to={"/"} className="hidden font-mono text-4xl md:block">
-                <FaRocket />
+              <Link to={"/"} className="hidden font-mono text-2xl md:block">
+                someName
               </Link>
             </section>
           </div>

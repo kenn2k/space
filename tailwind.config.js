@@ -8,6 +8,7 @@ export default {
       pageBg: "#0c0d28",
       hoverText: "#fff",
       hoverBg: "#5a429a",
+      error: "#CD5C5C",
     },
     extend: {},
   },

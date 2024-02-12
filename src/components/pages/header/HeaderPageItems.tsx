@@ -13,7 +13,7 @@ const HeaderPageItems = () => {
   }, []);
 
   return (
-    <div className="  flex flex-col justify-center  md:items-center p-[5%] h-[calc(100vh_-_74px)] mobile">
+    <div className="  flex flex-col justify-center  md:items-center p-[5%] h-[calc(100vh_-_72px)] mobile">
       {news && (
         <Container>
           <div className="flex flex-col gap-[3rem] ">
@@ -23,18 +23,18 @@ const HeaderPageItems = () => {
             <div className=" md:flex mb:flex-col md:justify-between gap-10 bg-hoverBg rounded-xl hover:custom-drop-shadow  hover:transition p-4 mb:gap-[1-rem]">
               <div className="flex flex-col items-center justify-center gap-8 p-4 text-center md:w-1/2 rounded-xl">
                 <p className="text-[2rem] border-b">{news.title}</p>
-                <div className="mb-4 ">{news.explanation}</div>
+                <div className="mb-4 mobileText">{news.explanation}</div>
               </div>
 
-              <div className="relative flex flex-col gap-[1rem] mb:mt-5  md:w-1/2 md:ml-4">
+              <div className="relative flex flex-col justify-center items-center gap-[1rem]  md:w-1/2 ">
                 <div className="aspect-w-16 aspect-h-9">
                   <img
                     src={news.hdurl}
-                    className="object-fill bg-cover bg-center w-full h-[40rem] rounded-xl"
+                    className="object-fill w-full h-auto bg-center bg-cover rounded-xl "
                     alt={news.title}
                   />
                 </div>
-                <div className="absolute bottom-0 right-0 p-4 transition bg-white border border-solid text-hoverText rounded-xl hover:text-text :duration-500">
+                <div className="absolute bottom-0 right-0 p-4 transition bg-white border border-solid mobileText text-hoverText rounded-xl hover:text-text :duration-500">
                   <p className="">{news.copyright}</p>
                   <p className="">{news.date}</p>
                 </div>
