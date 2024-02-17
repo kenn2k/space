@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import apodSlice from "./slices/apodSlice";
+import photoSlice from "./slices/photoSlice";
 
 const store = configureStore({
   reducer: {
     new: apodSlice.reducer,
+    photo: photoSlice.reducer,
   },
 });
 

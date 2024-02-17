@@ -6,3 +6,15 @@ export type HomePage = {
   media_type: string;
   title: string;
 };
+
+export type Spacecraft = {
+  img_src: string;
+  earth_date: string;
+  id: number;
+  rover: {
+    id: number;
+    name: string;
+    status: number;
+    total_photos: number;
+  };
+};

@@ -9,6 +9,7 @@ export default {
       hoverText: "#fff",
       hoverBg: "#5a429a",
       error: "#CD5C5C",
+      footer: "#242424",
     },
     extend: {},
   },

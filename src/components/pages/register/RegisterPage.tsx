@@ -16,7 +16,7 @@ const RegisterPage = () => {
   });
   return (
     <div className=" back bg-center bg-cover flex justify-center items-center  px-[5%] h-[calc(100vh_-_74px)] text-text mobileReg">
-      <div className="  p-[1rem_2rem] border bg-hoverBg rounded-2xl bg-opacity-20 customBlur">
+      <div className="  p-[1rem_2rem] border bg-hoverBg rounded-2xl bg-opacity-20 312">
         <form
           onSubmit={handleSubmit(() => reset())}
           className="flex flex-col gap-[2rem]"

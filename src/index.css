@@ -23,10 +23,12 @@
     @media (max-width: 640px) {
       font-size: 0.6rem;
       width: 100%;
+      padding: 0.1rem;
     }
     @media (max-width: 1040px) {
       font-size: 0.8rem;
       width: 100%;
+      padding: 0.3rem;
     }
   }
 
